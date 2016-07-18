@@ -1,0 +1,30 @@
+<div flex  md-whiteframe="3" layout-margin layout-padding>
+    <h2 align=""center>Register</h2>
+    <form name="regForm" layout="column">
+      <md-input-container>
+          <label>Username</label>
+          <input type="text" ng-model="username">
+    </md-input-container>
+
+     <md-input-container>
+      <label>Firstname</label>
+      <input type="text" ng-model="firstname">
+    </md-input-container>
+
+     <md-input-container>
+      <label>Lastname</label>
+      <input type="text" ng-model="lastname">
+    </md-input-container>
+
+    <md-input-container>
+      <label>Email Address</label>
+      <input type="email" ng-model="useremail">
+    </md-input-container>
+
+    <md-input-container>
+        <md-button class="md-primary" ng-click="addRegistration()"
+        ng-class="{'md-raised md-hue-1':(regForm.$dirty && regForm.$valid)}">REGISTER</md-button>
+    </md-input-container>
+
+    </form>
+</div>

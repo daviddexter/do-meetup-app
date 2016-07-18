@@ -1,0 +1,31 @@
+/***global page **/
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main{
+  flex: 1 0 auto;
+}
+
+.chat-area{
+    border:2px solid grey;
+    padding:2%;
+}
+
+.chat-body{
+    height:250px;
+    max-height:250px;
+    padding: 10px;
+    overflow-y:scroll;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+textarea{
+    width: -moz-calc(100% - 80px);
+    width: -webkit-calc(100% - 80px);
+    width: calc(100% - 80px);
+}

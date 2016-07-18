@@ -1,0 +1,47 @@
+<md-toolbar layout="row">
+    <h4>DigitalOcean Meetup Kenya</h4>
+</md-toolbar>
+
+<md-content layout-padding>
+    <md-fab-toolbar md-open="false" md-direction="up"
+            count="ctrl.count">
+            <md-fab-trigger class="align-with-text">
+               <md-button aria-label="menu" class="md-fab md-primary" >
+                  <md-icon class="material-icons" aria-label="menu" style="font-size:2em; margin-bottom:30px;"><i class="ion ion-android-apps"></i></md-icon>
+               </md-button>
+            </md-fab-trigger>
+            <md-toolbar>
+               <md-fab-actions class="md-toolbar-tools">
+                   <md-button aria-label="reg" class="md-fab md-raised md-mini md-accent" ui-sref="index.home">
+                     <md-icon class="material-icons" aria-label="reg" style="font-size:2em; margin-bottom:30px;"><i class="ion ion-ios-home"></i></md-icon>
+                  </md-button>
+                  <md-button aria-label="reg" class="md-fab md-raised md-mini md-accent" ui-sref="index.reg">
+                     <md-icon class="material-icons" aria-label="reg" style="font-size:2em; margin-bottom:30px;"><i class="ion ion-ios-plus"></i></md-icon>
+                  </md-button>
+                  <md-button aria-label="qna" class="md-fab md-raised md-mini md-accent" ui-sref="index.add">
+                     <md-icon class="material-icons" aria-label="qna" style="font-size:2em; margin-bottom:30px;"><i class="ion ion-compose"></i></md-icon>
+                  </md-button>
+               </md-fab-actions>
+            </md-toolbar>
+         </md-fab-toolbar>
+</md-content>
+
+<md-content layout-padding>
+    <ui-view>
+
+    </ui-view>
+</md-content>
+
+<div layout="row"  layout-align="center end" layout-padding>
+    <md-content>
+        <small><a href="http://blackspace.co.ke" style="text-decoration:none;"> &copy; BlackSpace Kenya 2016</a></small>
+    </md-content>
+    <span>
+       <md-content>
+            <small><a href="https://web.facebook.com/blackspacekenya/?_rdr"><i class="ion ion-social-facebook"></i></a></small>
+           <small><a href="https://twitter.com/BlackSpaceKenya"><i class="ion ion-social-twitter"></i></a></small>
+           <small><a href="https://github.com/daviddexter"><i class="ion ion-social-github"></i></a></small>
+       </md-content>
+    </span>
+
+</div>
